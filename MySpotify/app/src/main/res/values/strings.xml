@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MySpotify</string>
+    <string name="title_activity_search_play_list">SearchPlayListActivity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="enter_an_artist_name">Enter an artist name</string>
+    <string name="logging_in">Logging in!</string>
+</resources>

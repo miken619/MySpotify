@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/spotify_black">
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_artist_name"
+        android:textSize="@dimen/artist_name"
+        android:gravity="center"
+        android:textColor="@color/spotify_sand"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_song_name"
+        android:textSize="@dimen/song_name"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@color/spotify_white"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/placeholder"
+        android:id="@+id/player_artist_image"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remaining_time_of_song"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@color/spotify_white"/>
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/song_progress"
+            android:layout_weight="4" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_of_song"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/spotify_white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prev_song_button"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/play_song_button"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop_song_button"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_song_button"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

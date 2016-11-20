@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/spotify_black">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="4dp"
+        android:textColor="@color/spotify_white"/>
+
+    <TextView android:id="@+id/search_result_text_view"
+        android:textSize="@dimen/search_result"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:textColor="@color/spotify_white"/>
+
+
+
+</LinearLayout>

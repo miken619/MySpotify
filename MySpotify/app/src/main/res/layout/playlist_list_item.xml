@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/spotify_black">
+
+
+    <ImageView
+        android:id="@+id/playlist_image_view"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:layout_weight="10">
+
+        <TextView android:id="@+id/playlist_artist_name"
+            android:textSize="@dimen/search_result"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:textColor="@color/spotify_white"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/playlist_song_name"
+            android:gravity="center_vertical"
+            android:textColor="@color/spotify_white"
+            android:textSize="@dimen/search_result"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:id="@+id/playlist_delete"
+        android:background="@drawable/delete_song"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/spotify_black">
+
+
+    <ImageView
+        android:id="@+id/album_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"/>
+
+    <TextView android:id="@+id/track_result_text_view"
+        android:textSize="@dimen/search_result"
+        android:textStyle="bold"
+        android:layout_width="225dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:textColor="@color/spotify_white"/>
+
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:id="@+id/favorite_checkbox"
+        android:button="@drawable/custom_check_box"
+        android:layout_weight="1"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
